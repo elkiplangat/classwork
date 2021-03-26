@@ -1,0 +1,10 @@
+a) def MothraCount(a,b)
+b) calling
+    MothraCount(3,3) returns 5
+    Mothracount(4,4) returns 7
+    Mothracount(10,12) returns 21
+c) The base case is when both a and b are equal to 1 and we can quit the recursion. Since we are recursively decrementing both a and b( think of this as the lady moving towards the target tile, at the very end we are left with only one tile) it makes sense that the base case should be when we are left with only one unit for height and the same for length.
+d) The number of steps can be found using the formula a+b -1
+   when we think recursively, the number of steps for Mothra(a,b) is equal to Mothra(a,b-1) + 1 and Mothra(a-1,b)+1
+   The Mothra of any two numbers can be found by recursively decrementing either b or a first then the other then counting
+   the total number of steps taken.
