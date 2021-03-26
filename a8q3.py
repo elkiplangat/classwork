@@ -40,6 +40,12 @@ def copy(node_chain):
     creates a new node with the same values in the same order
     This function copies the node chain and return the reference to the first node in the new chain
     '''
+    def string_copy(k,s,i):
+  if (i == len(k)):
+    return s
+  else:
+    s.append(k[i])
+    return string_copy(k,s,i+1)
 
 
 
@@ -54,4 +60,5 @@ def replace(node_chain, target, replacement):
 
     replaces every occurence of the data target in node_chain with replacement
     '''
+    if node_chain
     ...
